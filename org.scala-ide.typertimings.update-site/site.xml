@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.scala-ide.typertimings.feature_0.0.0.jar" id="org.scala-ide.typertimings.feature" version="0.0.0">
+      <category name="org.scala-ide.typertimings"/>
+   </feature>
+   <feature url="features/org.scala-ide.typertimings.source.feature_0.0.0.jar" id="org.scala-ide.typertimings.source.feature" version="0.0.0">
+      <category name="org.scala-ide.typertimings-source"/>
+   </feature>
+   <category-def name="org.scala-ide.typertimings" label="Typer Timings"/>
+   <category-def name="org.scala-ide.typertimings-source" label="Typer Timings Source"/> -->
+</site>

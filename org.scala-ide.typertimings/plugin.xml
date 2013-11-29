@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.scalaide.typertimings.tracing">
+      <provider
+            class="org.scalaide.typertimings.TyperTimings">
+      </provider>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="org.scala-ide.sdt.core.preferences"
+            class="org.scalaide.typertimings.preferences.TyperTimingsPreferences"
+            id="org.scala-ide.typertimings.page"
+            name="Typer Timings">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="org.scalaide.typertimings.preferences.PreferencesInitializer">
+      </initializer>
+   </extension>
+</plugin>
