@@ -29,6 +29,7 @@ class TyperTimings extends ITraceListener {
     }
   }
 
+  // min/max working on Long
   def min(x: Long, y: Long) = if (x < y) x else y
   def max(x: Long, y: Long) = if (x < y) y else x
 

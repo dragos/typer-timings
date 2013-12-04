@@ -26,7 +26,7 @@ Typer Timings:
 
 object TyperTimingsPreferences {
   final val MINIMUM_DURATION = TyperTimingsPlugin.pluginId + "minimuDuration"
-  final val MERGE_TIMINGS = TyperTimingsPlugin.pluginId + "merteTimings"
+  final val MERGE_TIMINGS = TyperTimingsPlugin.pluginId + "mergeTimings"
 
   def getMinimumDuration(): Long = {
     TyperTimingsPlugin.plugin.getPreferenceStore().getLong(MINIMUM_DURATION)
