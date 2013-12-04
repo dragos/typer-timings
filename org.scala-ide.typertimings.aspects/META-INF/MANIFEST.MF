@@ -8,18 +8,12 @@ Bundle-Activator: org.scalaide.typertimings.weaving.TyperTimingsWeavingPlugin
 Require-Bundle: 
  org.eclipse.core.runtime,
  org.aspectj.runtime,
- org.scala-lang.scala-library,
- org.scala-lang.scala-reflect;resolution:=optional,
- org.scala-lang.scala-compiler;resolution:=optional,
+ org.scala-ide.scala.library,
+ org.scala-ide.scala.compiler;resolution:=optional,
  org.scala-ide.sdt.aspects
 Eclipse-SupplementBundle: 
- org.scala-lang.scala-reflect,
- org.scala-lang.scala-compiler
+ org.scala-ide.scala.compiler
 Bundle-ActivationPolicy: lazy
 Export-Package: 
  org.scalaide.typertimings.weaving.scalac
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Import-Package: org.eclipse.equinox.frameworkadmin,
- org.eclipse.equinox.internal.simpleconfigurator.manipulator,
- org.eclipse.equinox.simpleconfigurator.manipulator,
- org.eclipse.jdt.junit.launcher
