@@ -1,8 +1,8 @@
-scala-ide-plugin.g8
-===================
+# Typer Timings
 
 Show the time spent in the Scala type-checker in Eclipse
 
+# Developer info
 
 The projects can readily be imported inside Eclipse. Additionally, you have maven `pom` files
 based on Tycho, enabling command line builds.
