@@ -45,7 +45,7 @@ class TyperTimings extends ITraceListener {
     }
   }
 
-  // FIXME: This event is not yet sent by the aspecj component
+  // FIXME: This event is not yet sent by the aspectj component
   def beginTracing(): Unit = ()
 
   def endTracing(): Unit = {

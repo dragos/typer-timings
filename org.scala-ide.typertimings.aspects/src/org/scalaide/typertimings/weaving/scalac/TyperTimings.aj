@@ -143,7 +143,7 @@ public aspect TyperTimings {
       publishTrace(trace);
     }
     endTrace();
-    reporter.echo(buf.toString());
+    System.out.println(buf.toString());
     traces.clear();
   }
 

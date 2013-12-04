@@ -11,14 +11,12 @@ import org.eclipse.jface.preference.IntegerFieldEditor
 class TyperTimingsPreferences extends FieldEditorPreferencePage with IWorkbenchPreferencePage {
 
   setPreferenceStore(TyperTimingsPlugin.plugin.getPreferenceStore)
-  setDescription("""
-Typer Timings:
-  """)
+  setDescription("""Control what type-checker timing information is displayed""")
 
   override def createFieldEditors() {
     val parent = getFieldEditorParent
     addField(new IntegerFieldEditor(MINIMUM_DURATION, "Minimum duration (microseconds)", getFieldEditorParent))
-    addField(new BooleanFieldEditor(MERGE_TIMINGS, "Merge timing at the same line", getFieldEditorParent))
+    addField(new BooleanFieldEditor(MERGE_TIMINGS, "Show only the highest value at a given line", getFieldEditorParent))
   }
 
   def init(workbench: IWorkbench) {}
